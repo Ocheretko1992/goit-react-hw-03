@@ -41,7 +41,7 @@ export default function ContactList({ addContact }) {
       validationSchema={validationControl}>
       <Form>
         <div>
-          <label htmlFor={nameFieldId}>Name</label>
+          <label htmlFor={nameFieldId}>Name: </label>
           <Field
             id={nameFieldId}
             type="text"
@@ -51,7 +51,7 @@ export default function ContactList({ addContact }) {
         </div>
 
         <div>
-          <label htmlFor={numberFieldId}>Number</label>
+          <label htmlFor={numberFieldId}>Number: </label>
           <Field
             id={numberFieldId}
             type="tel"
