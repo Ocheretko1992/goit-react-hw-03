@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
 import * as Yup from "yup";
 import { nanoid } from "nanoid";
+import css from './ContactForm.module.css'
 
 
 export default function ContactList({ addContact }) {
@@ -50,7 +51,7 @@ export default function ContactList({ addContact }) {
           <ErrorMessage name="name" component="span" />
         </div>
 
-        <div>
+        <div className={css.form}>
           <label htmlFor={numberFieldId}>Number: </label>
           <Field
             id={numberFieldId}
@@ -60,7 +61,7 @@ export default function ContactList({ addContact }) {
           <ErrorMessage name="number" component="span" />
         </div>
 
-        <button type="submit">
+        <button className={css.btnAddContact} type="submit">
           Add contact
         </button>
       </Form>
